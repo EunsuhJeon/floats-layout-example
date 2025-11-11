@@ -187,6 +187,19 @@ main h1{
     clear: left;
 }
 
+.float-right{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.clear-right{
+    clear: right;
+}
+
+.clear-both{
+    clear: both;
+}
 
 .sub-nav{
     display: inline-block;
