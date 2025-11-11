@@ -153,3 +153,6 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+# Development tools
+.vscode/
+.idea/
