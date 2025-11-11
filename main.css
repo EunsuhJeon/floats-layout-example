@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* header area */
+
+header{
+    z-index: 10;
+    position: fixed;
+    min-width: 100vw;
+}
+
+nav{
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: #1f1f1f;
+}
+
+nav img{
+    max-height: 48px;
+    background-color: white;
+}
+
+.spacer{
+    display: inline-block;
+    /* Parent width - logo width - Menu <ul> width */
+    width: calc(100% - 40px - 290px);
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child{
+    margin-right: 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+    color: white;
+}
+
+nav ul li a.current{
+    color: aquamarine;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active{
+    color: green;
+}
+
+/* Services dropdown menu */
+#services-li{
+    position: relative;
+}
+
+#services-li:hover #services-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#services-menu{
+    background-color: #252525;
+    position: absolute;
+    top: 125%;
+    left: 0px;
+    z-index: 1;
+    margin-bottom: 0px;
+    padding: 4px 16px;
+    transform: translateY(-2vh);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.15s;
+}
+
+#services-menu li{
+    margin-right: 0px;
+    padding-top: 4px 0px;
+}
+
+#services-menu a{
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* main area */
+main{
+    display: block;
+    padding-top: 110px;
+    padding-bottom: 160px;
+    min-height: 100vh;
+}
+
+main div{
+    position: relative;
+}
+
+main h1{
+    padding: 20px;
+}
+
+.content-area{
+    display: inline-block; 
+    width: calc(100% - 250px); 
+    vertical-align: top;
+    height: 100%;
+    text-align: center;
+}
+
+.intro-section h2,
+.resources-section h2{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.intro-section img{
+    max-height: 170px;
+}
+
+.intro-section p,
+.resources-section a{
+    font-size: 13px;
+}
+
+.sub-nav{
+    display: inline-block;
+    width: 250px;
+    height: calc(100vh - 110px - 160px);
+    vertical-align: top;
+    background-color: #373737;
+    text-align: center;
+}
+
+.sub-nav ul{
+    list-style: none;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+.sub-nav ul li a{
+    text-decoration: none;
+}
+
+.sub-nav h3{
+    color: white;
+    margin: 32px 0;
+}
+
+.sub-nav ul li{
+    margin-bottom: 10px;
+}
+
+.nav-list a:link,
+.nav-list a:visited{
+    color: rgb(96, 149, 255);
+}
+
+.nav-list a:hover{
+    color: rgb(229, 145, 0);
+}
+
+.nav-list a:active{
+    color: green;
+}
+
+/* Page sections and content */
+.section-a,
+.section-b{
+    height: 200px;
+}
+
+.section-a{
+    background-color: lightblue;
+}
+
+.section-b{
+    background-color: lightpink;
+}
+
+
+/* back-to-top button area */
+.btn-wrapper{
+    position: fixed;
+    width: 100%;
+    bottom: 180px;
+    left: 1380px;
+}
+.back-to-top-btn{
+    position: sticky;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    display: inline-block;
+}
+
+.back-to-top-btn img{
+    width: 100%;
+}
+
+/* footer area */
+footer{
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+#footer-line{
+    border-bottom: 1px solid white;
+    display: inline-block;
+    /* Parent width - logo width - Menu <ul> width */
+    width: calc(100% - 250px);
+}
+
+footer ul{
+    margin-bottom: 0;
+    
+}
+
+footer p{
+    color: white;
+    margin: 32px 0px;
+}
+
+footer div nav,
+footer div p{
+    font-size: 15px;
+}
