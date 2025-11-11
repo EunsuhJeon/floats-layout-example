@@ -114,7 +114,7 @@ nav ul li a:active{
 /* main area */
 main{
     display: block;
-    padding-top: 110px;
+    padding-top: 115px;
     padding-bottom: 160px;
     min-height: 100vh;
 }
@@ -149,6 +149,44 @@ main h1{
 .resources-section a{
     font-size: 13px;
 }
+
+/* float-content-area */
+.main-section{
+    padding: 10px;
+    background-color: #727272;
+    height: 470px;
+}
+
+.main-section article{
+    padding: 10px;
+    background-color: #b3b3b3;
+    height: 100%;
+}
+
+.main-section img{
+    width:300px;
+}
+
+.main-section h2{
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.main-section p{
+    font-size: 18px;
+}
+
+.float-left{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.clear-left{
+    clear: left;
+}
+
 
 .sub-nav{
     display: inline-block;
@@ -189,41 +227,6 @@ main h1{
 
 .nav-list a:active{
     color: green;
-}
-
-/* Page sections and content */
-.section-a,
-.section-b{
-    height: 200px;
-}
-
-.section-a{
-    background-color: lightblue;
-}
-
-.section-b{
-    background-color: lightpink;
-}
-
-
-/* back-to-top button area */
-.btn-wrapper{
-    position: fixed;
-    width: 100%;
-    bottom: 180px;
-    left: 1380px;
-}
-.back-to-top-btn{
-    position: sticky;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    z-index: 20;
-    display: inline-block;
-}
-
-.back-to-top-btn img{
-    width: 100%;
 }
 
 /* footer area */
